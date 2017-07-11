@@ -1,0 +1,146 @@
+@import "cards";
+.card {
+    .card-imagev2 {
+        position: relative;
+        // Image background for content
+        img {
+            display: block;
+            border-radius: 5px;
+            position: relative;
+            left: 5%;
+            right: 0;
+            top: -1.5em;
+            bottom: 0;
+            width: 90%;
+            @extend .z-depth-5;
+        }
+        .card-title {
+            color: $card-bg-color;
+            position: absolute;
+            bottom: 0;
+            left: 1em;
+            max-width: 100%;
+            padding: $card-padding;
+        }
+    }
+}
+
+.card {
+    margin: 2em 2em 2em;
+    .card-imagev3 {
+        position: relative;
+        // Image background for content
+        img {
+            display: block;
+            border-radius: 5px;
+            position: relative;
+            left: -1em;
+            right: 0;
+            top: -1.5em;
+            bottom: 0;
+            width: calc(100% + 2em);
+            @extend .z-depth-5;
+        }
+        .card-title {
+            color: $card-bg-color;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            padding: $card-padding;
+        }
+    }
+}
+
+.card-imagev4 {
+    position: relative;
+    // Image background for content
+    img {
+        display: block;
+        border-radius: 5px;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: -1.5em;
+        bottom: 0;
+        width: 100%;
+        @extend .z-depth-5;
+    }
+    .card-title {
+        color: $card-bg-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        padding: $card-padding;
+    }
+}
+
+.card-imagev5 {
+    position: relative;
+    // Image background for content
+    img {
+        display: block;
+        border-radius: 5px;
+        position: relative;
+        left: 2em;
+        right: 0;
+        top: -3rem;
+        width: 40%;
+        @extend .z-depth-5;
+    }
+    a {
+        position: absolute;
+        top: -2rem;
+        right: 0;
+    }
+    .card-title {
+        color: black;
+        position: absolute;
+        top: 0.3em;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        padding: $card-padding;
+        float: right;
+    }
+    .card-subtitle {
+        color: black;
+        position: absolute;
+        top: 0.3em;
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        padding: 60px 30px 60px 30px;
+        float: right;
+    }
+    .card-content {
+        position: relative;
+    }
+}
+
+.text {
+    padding-top: 30px;
+}
+
+.zoom {
+    transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    /* Firefox */
+    -webkit-transition: 1.5s ease;
+    /* Chrome - Safari */
+    -o-transition: 1.5s ease;
+    /* Opera */
+}
+
+.zoom:hover {
+    transform: scale(2);
+    -moz-transform: scale(2);
+    /* Firefox */
+    -webkit-transform: scale(2);
+    /* Chrome - Safari */
+    -o-transform: scale(2);
+    /* Opera */
+    -ms-transform: scale(2);
+    /* IE9 */
+}
